@@ -1,5 +1,5 @@
 .home {
-    height: 1200px;
+    height: 1000px;
     /*border:2px solid white;*/
 }
 
@@ -77,9 +77,14 @@
     text-decoration: none;
     touch-action: manipulation;
     transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
-    user-select: none;
-    -webkit-user-select: none;
     width: auto;
+}
+
+.home a {
+    text-decoration: none;
+    color: #fdfdfd;
+
+
 }
 
 .home button:active {
@@ -89,3 +94,10 @@
     color: rgb(34, 34, 34)
 }
 
+
+.home a:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+    color: rgb(34, 34, 34)
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import s from "./Home.module.css";
 
 const Home = () => {
@@ -15,17 +16,14 @@ const Home = () => {
                         </p>
                     </div>
                     <div className={s.buttons}>
-                        <button>CV download</button>
-                        <button>GitHub</button>
+                        <Link to="https://drive.google.com/file/d/1S3olNNTyod-q0171eGSon_cZchqBhtJQ/view?usp=sharing">
+                            <button>CV download</button>
+                        </Link>
+                        <Link to="https://github.com/beamle">
+                            <button>GitHub</button>
+                        </Link>
                     </div>
                 </div>
-                {/*<div className={s.me}>*/}
-                {/*    <img*/}
-                {/*        src="/pics/me.png"*/}
-                {/*        alt="Todolist"*/}
-                {/*        className={s.image}*/}
-                {/*    />*/}
-                {/*</div>*/}
             </div>
         </div>
     );

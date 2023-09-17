@@ -31,8 +31,8 @@ const Portfolio = () => {
                         </div>
                     </Box>
 
-                    <Paper sx={{mt: 4, padding: 4, backgroundColor: '#ff8b76', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>
-                        <img src="/pics/todolist2.png"
+                    <Paper sx={{mt: 4, padding: 4, backgroundColor: 'rgb(255 255 255 / 16%)', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>
+                        <img src="/pics/sm.png"
                              alt="Todolist"
                              className={s.image}
                              style={{width: '100%', height: '100%'}}
@@ -53,11 +53,10 @@ const Portfolio = () => {
                             <div className={s.item__stack__item__mui}>Typescript</div>
                             <div className={s.item__stack__item__mui}>Redux</div>
                             <div className={s.item__stack__item__mui}>Redux</div>
-                            <div className={s.item__stack__item__mui}>reo</div>
                         </div>
                     </Box>
-                    <Paper sx={{mt: 4, padding: 4, backgroundColor: '#ff8b76', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>
-                        <img src="/pics/social-media.png"
+                    <Paper sx={{mt: 4, padding: 4, backgroundColor: 'rgb(255 255 255 / 16%)', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>
+                        <img src="/pics/tl.png"
                              alt="SocialMedia"
                              className={s.image}
                              style={{width: '100%', height: '100%'}}

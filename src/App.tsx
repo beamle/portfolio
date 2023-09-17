@@ -49,9 +49,7 @@ function App() {
                 hasMore={hasMore}
                 loader={<CircularProgress/>}
                 endMessage={
-                    <p style={{textAlign: "center"}}>
-                        <b>Yay! You have seen it all</b>
-                    </p>
+                    <p style={{textAlign: "center"}}></p>
                 }
             >
                 {state.items.map((page, index) => page)}
