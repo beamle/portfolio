@@ -1,0 +1,92 @@
+.home {
+    height: 600px;
+    border:2px solid white;
+}
+
+.home h1 {
+    color: white;
+}
+
+.home p {
+    color: #BCBCBC;
+    margin: 0 20% 4% 50px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+/*.homeContainer {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: flex-start;*/
+/*}*/
+.homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Home.module.css */
+
+.me {
+    display: flex;
+    border: 2px solid white;
+    background-color: lightgoldenrodyellow;
+    border-radius: 175px; /* Half of the width (350px) */
+    max-height: 500px;
+    /*width: 350px;*/
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.me .image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.home button {
+    background-color: rgb(34, 34, 34);
+    border: 1px solid #fdfdfd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fdfdfd;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+
+.home button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.home button:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+    color: rgb(34, 34, 34)
+}
+
+.home button:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
