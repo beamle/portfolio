@@ -11,7 +11,7 @@ const Home = () => {
                     </div>
                     <div className={s.additionalText}>
                         <p>
-                            Grind/ng to become front-end <span style={{color: "ffffb6"}}>ninja</span>
+                            Grind/ng to become front-end <span style={{color: "#ffffb6"}}>ninja</span>
                         </p>
                     </div>
                     <div className={s.buttons}>

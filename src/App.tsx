@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import InfiniteScroll from "react-infinite-scroll-component";
 import './App.css';
-
+import CircularProgress from "@mui/material/CircularProgress";
 
 function App() {
     const [state, setState] = useState({items: [<Home/>, <About/>,]});
@@ -22,18 +22,19 @@ function App() {
             setHasMore(false);
             return;
         }
-        // a fake async api call like which sends
-        // 20 more records in 1.5 secs
-        console.log("extraC", extraComponents[count]);
-        setTimeout(() => {
-            setState({
-                items: state.items.concat([extraComponents[count]])
-            });
-            setCount(count + 1);
-        }, 1500);
+
+        setState({
+            items: state.items.concat([extraComponents[count]])
+        });
+        setCount(count + 1);
+        // setTimeout(() => {
+        //     setState({
+        //         items: state.items.concat([extraComponents[count]])
+        //     });
+        //     setCount(count + 1);
+        // }, 0);
     };
 
-    // console.log(state.items);
     return (
         <div className="app">
             <div className="headerNav">
@@ -46,7 +47,7 @@ function App() {
                 // height={1200} // Adjust this value based on your design needs
                 next={fetchMoreData}
                 hasMore={hasMore}
-                loader={<h4>Loading...</h4>}
+                loader={<CircularProgress/>}
                 endMessage={
                     <p style={{textAlign: "center"}}>
                         <b>Yay! You have seen it all</b>

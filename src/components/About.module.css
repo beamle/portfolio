@@ -1,6 +1,7 @@
 .about {
-    background-color: grey;
-    height: 1200px;
+    background-color: #0F1624;
+    height: 1000px;
+    border-left: 20px solid white;
 }
 
 .about .description {

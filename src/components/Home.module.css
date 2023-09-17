@@ -1,6 +1,6 @@
 .home {
-    height: 600px;
-    border:2px solid white;
+    height: 1200px;
+    /*border:2px solid white;*/
 }
 
 .home h1 {
@@ -88,3 +88,4 @@
     transform: scale(.96);
     color: rgb(34, 34, 34)
 }
+
