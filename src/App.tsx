@@ -10,9 +10,9 @@ import './App.css';
 
 
 function App() {
-    const [state, setState] = useState({items: [<Home/>, <Portfolio/>]});
+    const [state, setState] = useState({items: [<Home/>, <About/>,]});
     const [extraComponents] = useState([
-        <About/>,
+        <Portfolio/>,
         <Contact/>
     ]);
     const [count, setCount] = useState(0);

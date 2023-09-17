@@ -7,22 +7,25 @@ const Home = () => {
             <div className={s.homeContainer}>
                 <div className={s.content}>
                     <div className={s.bigName}>
-                        <h1> seniorPomidor </h1>
+                        {/*<h1> Nikitš </h1>*/}
                     </div>
                     <div className={s.additionalText}>
-                        <p>Hi, my name is Nikita Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>
+                            Grind/ng to become front-end <span style={{color: "ffffb6"}}>ninja</span>
+                        </p>
                     </div>
-                    <div className={s.button}>
+                    <div className={s.buttons}>
                         <button>CV download</button>
+                        <button>GitHub</button>
                     </div>
                 </div>
-                <div className={s.me}>
-                    <img
-                        src="/pics/me.png"
-                        alt="Todolist"
-                        className={s.image}
-                    />
-                </div>
+                {/*<div className={s.me}>*/}
+                {/*    <img*/}
+                {/*        src="/pics/me.png"*/}
+                {/*        alt="Todolist"*/}
+                {/*        className={s.image}*/}
+                {/*    />*/}
+                {/*</div>*/}
             </div>
         </div>
     );

@@ -9,7 +9,8 @@ const Portfolio = () => {
             <div className={s.portfolioContainer}>
                 <div className={s.portfolioContainer__item}>
                     <div className={s.item__name}>Todolist</div>
-                    <div className={s.item__description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    <div className={s.item__description}>Typescript application built with functional-based
+                        components, Redux, and the useSelector hook approach</div>
                     <div className={s.item__picture}><img src="/pics/todolist.png"
                                                           alt="Todolist"
                                                           className={s.image}/></div>
@@ -25,7 +26,8 @@ const Portfolio = () => {
                 </div>
                 <div className={s.portfolioContainer__item}>
                     <div className={s.item__name}>SocialMedia</div>
-                    <div className={s.item__description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    <div className={s.item__description}>Social-network developed using React-Redux, utilizing class-components and the connector
+                        approach</div>
                     <div className={s.item__picture}><img src="/pics/social-media.png"
                                                           alt="Todolist"
                                                           className={s.image}/></div>
