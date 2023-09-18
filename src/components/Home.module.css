@@ -1,6 +1,19 @@
 .home {
-    height: 1000px;
+    height: 1200px;
     /*border:2px solid white;*/
+}
+
+@media (max-width: 899px) {
+    .home {
+        height: 800px;
+    }
+    .home .additionalText p{
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 900;
+        font-size: 82px !important;
+    }
 }
 
 .home h1 {

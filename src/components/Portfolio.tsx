@@ -11,8 +11,14 @@ const Portfolio = () => {
             <Container>
                 <h1> Projects </h1>
             </Container>
-            <Container sx={{display: 'flex', gap: '20px'}}>
-                <Box sx={{display: 'flex', width: '100%', flexDirection: 'column'}}>
+            <Container  sx={{
+                display: 'flex',
+                gap: '20px',
+                flexDirection: { xs: 'column', md: 'row' },
+                height: '100%',
+            }}
+            >
+                <Box sx={{display: 'flex', width: {sm: '45%', xs: '100%'}, flexDirection: 'column', flexWrap: 'wrap'}}>
                     <div className={s.item__name}>
                         <Typography sx={{fontSize: '24px', color: 'white', textTransform: 'uppercase', fontWeight: '900'}}>Todolist</Typography>
                     </div>
@@ -32,21 +38,21 @@ const Portfolio = () => {
                     </Box>
 
                     <Paper sx={{mt: 4, padding: 4, backgroundColor: 'rgb(255 255 255 / 16%)', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>
-                        <img src="/pics/sm.png"
+                        <img src="./pics/sm.png"
                              alt="Todolist"
                              className={s.image}
-                             style={{width: '100%', height: '100%'}}
+                             style={{width: '100%', height: 'auto', maxWidth: '100%'}}
                         />
                     </Paper>
                 </Box>
-                <Box sx={{display: 'flex', width: '100%', flexDirection: 'column'}}>
+                <Box sx={{display: 'flex', width: {md: '35%', sm: '45%', xs: '100%'}, flexDirection: 'column', flexWrap: 'wrap'}}>
                     <div className={s.item__name}><Typography sx={{fontSize: '24px', color: 'white', textTransform: 'uppercase', fontWeight: '900'}}>SocialMedia</Typography></div>
                     <Box sx={{display: 'flex', width: '100%'}}>
                         <div className={s.item__description} style={{flex: '1'}}>
                             <Typography sx={{color: 'white'}}>Social-network developed using React-Redux, utilizing
                                 class-components and the connector approach</Typography>
                         </div>
-
+                
                         <div className={s.item__stack__container} style={{flex: '1', justifyContent: 'center'}}>
                             <div className={s.item__stack__item__r}>React</div>
                             <div className={s.item__stack__item__rf}>ReduxForm</div>
@@ -56,10 +62,10 @@ const Portfolio = () => {
                         </div>
                     </Box>
                     <Paper sx={{mt: 4, padding: 4, backgroundColor: 'rgb(255 255 255 / 16%)', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>
-                        <img src="/pics/tl.png"
+                        <img src="./pics/tl.png"
                              alt="SocialMedia"
                              className={s.image}
-                             style={{width: '100%', height: '100%'}}
+                             style={{width: '100%', height: '100%', maxWidth: '100%'}}
                         />
                     </Paper>
                 </Box>

@@ -1,4 +1,9 @@
 .stack {
-    height: 800px;
-    border-right: 20px solid whitesmoke;
+    height: 1000px;
+}
+
+@media (max-width: 500px) {
+    .stack {
+        height: 800px;
+    }
 }

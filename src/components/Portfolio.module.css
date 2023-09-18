@@ -2,6 +2,18 @@
     height: 1000px;
 }
 
+@media (max-width: 899px) {
+    .portfolio {
+        /*margin-bottom: 350px;*/
+    }
+}
+
+@media (max-width: 899px) {
+    .portfolio {
+        height: 1350px;
+    }
+}
+
 /*.portfolioContainer {*/
 /*    display: flex;*/
 /*    gap: 10px;*/

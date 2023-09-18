@@ -1,6 +1,6 @@
 .about {
     background-color: #0F1624;
-    height: 800px;
+    height: 1000px;
     border-left: 20px solid white;
 }
 
@@ -15,4 +15,10 @@
 
 .picture .image {
     width: 200px;
+}
+
+@media (max-width: 899px) {
+    .about {
+        height: 800px;
+    }
 }

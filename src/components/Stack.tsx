@@ -9,7 +9,7 @@ import Avatar from "@mui/material/Avatar";
 import {Stack} from "@mui/material";
 
 
-const DemoPaper = styled(Paper)(({theme}) => ({
+const Item = styled(Paper)(({theme}) => ({
     width: 50,
     height: 50,
     padding: theme.spacing(2),
@@ -26,21 +26,20 @@ export default function SquareCorners() {
             <Container>
                 <h1>Stack</h1>
             </Container>
-            <Container sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 2, mt: 16}}>
-                <Stack direction="row" spacing={2}>
-                    <DemoPaper > <img src="./pics/mui.png" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/react.png" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/storybook.png" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/logo-javascript.svg" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/jest-logo-png-transparent.png" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-
+            <Container sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 2, mt: 16, flexWrap: 'wrap'}}>
+                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap'}}>
+                    <Item > <img src="./pics/mui.png" alt="Mui Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/react.png" alt="react Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/storybook.png" alt="storybook Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/logo-javascript.svg" alt="javascript Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/jest-logo-png-transparent.png" alt="jest Logo" width="100%" height="100%" /></Item>
                 </Stack>
-                <Stack direction="row" spacing={2}>
-                    <DemoPaper ><img src="./pics/html-1.svg" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/css-3.svg" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/postman.svg" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/redux.svg" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
-                    <DemoPaper ><img src="./pics/formik.png" alt="Mui Logo" width="100%" height="100%" /></DemoPaper>
+                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap'}}>
+                    <Item ><img src="./pics/html-1.svg" alt="html Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/css-3.svg" alt="css Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/postman.svg" alt="postman Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/redux.svg" alt="redux Logo" width="100%" height="100%" /></Item>
+                    <Item ><img src="./pics/formik.png" alt="formik Logo" width="100%" height="100%" /></Item>
 
                 </Stack>
             </Container>
