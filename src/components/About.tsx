@@ -23,7 +23,7 @@ const About = () => {
                             making that transition
                         </Typography>
                         <img
-                            src="/pics/mindmap.svg"
+                            src="./pics/mindmap.svg"
                             alt="mindmap"
                             className={s.image}
                             style={{ width: '50%', height: '100%', margin: 'auto' }}
