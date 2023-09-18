@@ -13,8 +13,8 @@ const About = () => {
 
             <div className={s.content}>
                 <Container>
-                    <Box sx={{ display: 'flex', gap: "10%" }}>
-                        <Typography sx={{color: '#F7F7F7', fontSize: '16px'}}>
+                    <Box sx={{ display: 'flex', flexDirection: {xs: 'column', md: 'row'}, gap: "10%"}}>
+                        <Typography sx={{color: '#F7F7F7', fontSize: '16px', mb: {xs: 6, md: 3},  width: '100%'}}>
                             My name is Nikita.
                             In the past few years, I've been working in the IT sector as an analyst.
                             However, I've made a decision to pivot my career towards software development and am
@@ -26,7 +26,7 @@ const About = () => {
                             src="./pics/mindmap.svg"
                             alt="mindmap"
                             className={s.image}
-                            style={{ width: '50%', height: '100%', margin: 'auto' }}
+                            style={{ width: '55%', height: '100%', margin: 'auto' }}
                         />
                     </Box>
                 </Container>
