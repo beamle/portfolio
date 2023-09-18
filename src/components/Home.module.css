@@ -103,15 +103,15 @@
 
 .home button:active {
     background-color: #F7F7F7;
-    border-color: #000000;
     transform: scale(.96);
-    color: rgb(34, 34, 34)
+    color: rgb(34, 34, 34);
+    border-radius: 199px;
 }
 
 
 .home a:active {
     background-color: #F7F7F7;
-    border-color: #000000;
+    border-radius: 10px;
     transform: scale(.96);
     color: rgb(34, 34, 34)
 }
