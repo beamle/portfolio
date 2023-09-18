@@ -13,3 +13,17 @@
     }
 }
 
+@media (max-width: 645px) {
+    .stack {
+        height: auto;
+    }
+    .stack__container {
+        gap: 10px;
+    }
+    .stackItem {
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+
+

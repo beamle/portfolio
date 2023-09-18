@@ -18,8 +18,8 @@
     width: 200px;
 }
 
-@media (max-width: 899px) {
-    .about {
-        height: 800px;
-    }
-}
+/*@media (max-width: 899px) {*/
+/*    .about {*/
+/*        height: 400px;*/
+/*    }*/
+/*}*/

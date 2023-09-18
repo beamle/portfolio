@@ -27,7 +27,7 @@ export default function SquareCorners() {
                 <h1>Stack</h1>
             </Container>
             <Container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 5, mt: 15, flexWrap: 'wrap'}}>
-                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap', gap: 5, maxWidth: '75%'}}>
+                <Stack className={s.stack__container} direction="row" sx={{display: 'flex', flexWrap: 'wrap', gap: 5, maxWidth: '75%'}}>
                     <Item className={s.stackItem}> <img src="./pics/mui.png" alt="Mui Logo" width="100%" height="100%" /></Item>
                     <Item className={s.stackItem}><img src="./pics/react.png" alt="react Logo" width="100%" height="100%" /></Item>
                     <Item className={s.stackItem}><img src="./pics/storybook.png" alt="storybook Logo" width="100%" height="100%" /></Item>
