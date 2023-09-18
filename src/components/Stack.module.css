@@ -1,9 +1,10 @@
 .stack {
-    height: 1000px;
+    height: auto;
+    margin: 7% 0 7% 0;
 }
 
 @media (max-width: 500px) {
     .stack {
-        height: 800px;
+        height: auto;
     }
 }

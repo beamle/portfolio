@@ -36,7 +36,7 @@ export default function ContactForm() {
                     alignItems: 'center'
                 }}>
                     <Link to="https://t.me/seniorpomidor1" target="_blank">
-                        <TelegramIcon sx={{color: 'lightgoldenrodyellow', fontSize: '50px', m: 2}}/>
+                        <TelegramIcon sx={{color: 'rgb(255, 255, 182)', fontSize: '50px', m: 2}}/>
                     </Link>
                     <Typography sx={{color: 'white', fontWeight: 900, m: 2}}>TELEGRAM</Typography>
                 </Box>
@@ -48,7 +48,7 @@ export default function ContactForm() {
                     alignItems: 'center'
                 }}>
                     <Link to="https://www.linkedin.com/in/nikita-alpatov-5742b4188/" target="_blank">
-                        <LinkedInIcon sx={{color: 'lightgoldenrodyellow', fontSize: '50px', m: 2}}/>
+                        <LinkedInIcon sx={{color: 'rgb(255, 255, 182)', fontSize: '50px', m: 2}}/>
 
                     </Link>
                     <Typography sx={{color: 'white', fontWeight: 900, m: 2}}>LINKEDIN</Typography>
@@ -64,7 +64,7 @@ export default function ContactForm() {
                     }}
                     onClick={handleEmailClick}
                 >
-                    <EmailIcon sx={{color: "lightgoldenrodyellow", fontSize: "50px", m: 2}}/>
+                    <EmailIcon sx={{color: "rgb(255, 255, 182)", fontSize: "50px", m: 2}}/>
                     <Typography sx={{color: "white", fontWeight: 900, m: 2}}>EMAIL</Typography>
                 </Box>
             </Container>

@@ -10,11 +10,10 @@ import {Stack} from "@mui/material";
 
 
 const Item = styled(Paper)(({theme}) => ({
-    width: 50,
-    height: 50,
+    width: 100,
+    height: 100,
     padding: theme.spacing(2),
     ...theme.typography.body2,
-    margin: 2,
     textAlign: 'center',
     borderRadius: 50,
     boxShadow: '0px 4px 8px rgb(244 244 244 / 31%)',
@@ -26,15 +25,15 @@ export default function SquareCorners() {
             <Container>
                 <h1>Stack</h1>
             </Container>
-            <Container sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 2, mt: 16, flexWrap: 'wrap'}}>
-                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap'}}>
+            <Container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 5, mt: 16, flexWrap: 'wrap'}}>
+                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap', gap: 5}}>
                     <Item > <img src="./pics/mui.png" alt="Mui Logo" width="100%" height="100%" /></Item>
                     <Item ><img src="./pics/react.png" alt="react Logo" width="100%" height="100%" /></Item>
                     <Item ><img src="./pics/storybook.png" alt="storybook Logo" width="100%" height="100%" /></Item>
                     <Item ><img src="./pics/logo-javascript.svg" alt="javascript Logo" width="100%" height="100%" /></Item>
                     <Item ><img src="./pics/jest-logo-png-transparent.png" alt="jest Logo" width="100%" height="100%" /></Item>
                 </Stack>
-                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap'}}>
+                <Stack direction="row" sx={{display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                     <Item ><img src="./pics/html-1.svg" alt="html Logo" width="100%" height="100%" /></Item>
                     <Item ><img src="./pics/css-3.svg" alt="css Logo" width="100%" height="100%" /></Item>
                     <Item ><img src="./pics/postman.svg" alt="postman Logo" width="100%" height="100%" /></Item>

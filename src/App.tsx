@@ -10,9 +10,10 @@ function App() {
     const projectRef = useRef(null);
     const stackRef = useRef(null);
     const aboutRef = useRef(null);
+    const contactRef = useRef(null);
 
     const scrollToComponent = (ref: RefObject<HTMLDivElement>) => {
-        if(ref) {
+        if (ref) {
             ref.current?.scrollIntoView({behavior: 'smooth'});
         }
     };
@@ -29,19 +30,24 @@ function App() {
                 <div className="headerNav-item" onClick={() => scrollToComponent(stackRef)}>
                     Stack
                 </div>
+                <div className="headerNav-item" onClick={() => scrollToComponent(stackRef)}>
+                    Contact
+                </div>
             </div>
 
-            <Home />
+            <Home/>
             <div ref={projectRef}>
-                <Portfolio />
+                <Portfolio/>
             </div>
             <div ref={aboutRef}>
-                <About />
+                <About/>
             </div>
             <div ref={stackRef}>
-                <Stack />
+                <Stack/>
             </div>
-            <Contact />
+            <div ref={contactRef}>
+                <Contact/>
+            </div>
         </div>
     );
 }

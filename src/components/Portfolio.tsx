@@ -13,12 +13,12 @@ const Portfolio = () => {
             </Container>
             <Container  sx={{
                 display: 'flex',
-                gap: '20px',
+                gap: '50px',
                 flexDirection: { xs: 'column', md: 'row' },
                 height: '100%',
             }}
             >
-                <Box sx={{display: 'flex', width: {sm: '45%', xs: '100%'}, flexDirection: 'column', flexWrap: 'wrap'}}>
+                <Box sx={{display: 'flex', width: {md: '80%', sm: '100%', xs: '100%'}, flexDirection: 'column', flexWrap: 'wrap'}}>
                     <div className={s.item__name}>
                         <Typography sx={{fontSize: '24px', color: 'white', textTransform: 'uppercase', fontWeight: '900'}}>Todolist</Typography>
                     </div>
@@ -45,7 +45,7 @@ const Portfolio = () => {
                         />
                     </Paper>
                 </Box>
-                <Box sx={{display: 'flex', width: {md: '35%', sm: '45%', xs: '100%'}, flexDirection: 'column', flexWrap: 'wrap'}}>
+                <Box sx={{display: 'flex', width: {md: '80%', sm: '100%', xs: '100%'}, flexDirection: 'column', flexWrap: 'wrap'}}>
                     <div className={s.item__name}><Typography sx={{fontSize: '24px', color: 'white', textTransform: 'uppercase', fontWeight: '900'}}>SocialMedia</Typography></div>
                     <Box sx={{display: 'flex', width: '100%'}}>
                         <div className={s.item__description} style={{flex: '1'}}>

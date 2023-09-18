@@ -1,7 +1,8 @@
 .about {
     background-color: #0F1624;
-    height: 1000px;
-    border-left: 20px solid white;
+    height: auto;
+    border-left: 20px solid rgb(255, 255, 182);
+    margin: 7% 0 7% 0;
 }
 
 .about .description {
