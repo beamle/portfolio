@@ -132,6 +132,22 @@
     margin: 0;
 }
 
+.item__stack__item__gh {
+    /*    background-color: #e7e7e7;*/
+    /*    border-radius: 25px;*/
+    /*    color: #424242;*/
+    /*    padding: 10px;*/
+    /*    margin: 0;*/
+}
+
+.item__stack__item__ghp {
+    /*background-color: #e7e7e7;*/
+    /*border-radius: 25px;*/
+    /*color: #424242;*/
+    /*padding: 10px;*/
+    /*margin: 0;*/
+}
+
 /*.item__picture {*/
 /*    display: flex;*/
 /*    justify-content: center;*/
