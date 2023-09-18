@@ -12,7 +12,7 @@ const Portfolio = () => {
                 <h1> Projects </h1>
             </Container>
             <Container sx={{display: 'flex', gap: '20px'}}>
-                <Box>
+                <Box sx={{display: 'flex', width: '100%', flexDirection: 'column'}}>
                     <div className={s.item__name}>
                         <Typography sx={{fontSize: '24px', color: 'white', textTransform: 'uppercase', fontWeight: '900'}}>Todolist</Typography>
                     </div>
@@ -25,9 +25,9 @@ const Portfolio = () => {
                             <div className={s.item__stack__item__r}>React</div>
                             <div className={s.item__stack__item__sb}>Storybook</div>
                             <div className={s.item__stack__item__mui}>MUI</div>
-                            <div className={s.item__stack__item__mui}>Formik</div>
-                            <div className={s.item__stack__item__mui}>Typescript</div>
-                            <div className={s.item__stack__item__mui}>Redux</div>
+                            <div className={s.item__stack__item__f}>Formik</div>
+                            <div className={s.item__stack__item__ts}>Typescript</div>
+                            <div className={s.item__stack__item__red}>Redux</div>
                         </div>
                     </Box>
 
@@ -39,7 +39,7 @@ const Portfolio = () => {
                         />
                     </Paper>
                 </Box>
-                <Box>
+                <Box sx={{display: 'flex', width: '100%', flexDirection: 'column'}}>
                     <div className={s.item__name}><Typography sx={{fontSize: '24px', color: 'white', textTransform: 'uppercase', fontWeight: '900'}}>SocialMedia</Typography></div>
                     <Box sx={{display: 'flex', width: '100%'}}>
                         <div className={s.item__description} style={{flex: '1'}}>
@@ -49,10 +49,10 @@ const Portfolio = () => {
 
                         <div className={s.item__stack__container} style={{flex: '1', justifyContent: 'center'}}>
                             <div className={s.item__stack__item__r}>React</div>
-                            <div className={s.item__stack__item__mui}>ReduxForm</div>
-                            <div className={s.item__stack__item__mui}>Typescript</div>
-                            <div className={s.item__stack__item__mui}>Redux</div>
-                            <div className={s.item__stack__item__mui}>Redux</div>
+                            <div className={s.item__stack__item__rf}>ReduxForm</div>
+                            <div className={s.item__stack__item__ts}>Typescript</div>
+                            <div className={s.item__stack__item__red}>Redux</div>
+                            <div className={s.item__stack__item__jest}>Jest</div>
                         </div>
                     </Box>
                     <Paper sx={{mt: 4, padding: 4, backgroundColor: 'rgb(255 255 255 / 16%)', height: 'auto', alignItems: 'center', justifyContent: 'center'}}>

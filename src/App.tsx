@@ -1,60 +1,47 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
+import React, {RefObject, useRef} from 'react';
 import './App.css';
-import Home from "./components/Home";
+import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import InfiniteScroll from "react-infinite-scroll-component";
-import './App.css';
-import CircularProgress from "@mui/material/CircularProgress";
+import Stack from './components/Stack';
 
 function App() {
-    const [state, setState] = useState({items: [<Home/>, <About/>,]});
-    const [extraComponents] = useState([
-        <Portfolio/>,
-        <Contact/>
-    ]);
-    const [count, setCount] = useState(0);
-    const [hasMore, setHasMore] = useState(true);
-    const fetchMoreData = () => {
-        if (state.items.length >= 4) {
-            setHasMore(false);
-            return;
-        }
+    const projectRef = useRef(null);
+    const stackRef = useRef(null);
+    const aboutRef = useRef(null);
 
-        setState({
-            items: state.items.concat([extraComponents[count]])
-        });
-        setCount(count + 1);
-        // setTimeout(() => {
-        //     setState({
-        //         items: state.items.concat([extraComponents[count]])
-        //     });
-        //     setCount(count + 1);
-        // }, 0);
+    const scrollToComponent = (ref: RefObject<HTMLDivElement>) => {
+        if(ref) {
+            ref.current?.scrollIntoView({behavior: 'smooth'});
+        }
     };
 
     return (
         <div className="app">
             <div className="headerNav">
-                <div className="headerNav-item">Project</div>
-                <div className="headerNav-item">Stack</div>
-                <div className="headerNav-item">About</div>
+                <div className="headerNav-item" onClick={() => scrollToComponent(projectRef)}>
+                    Projects
+                </div>
+                <div className="headerNav-item" onClick={() => scrollToComponent(aboutRef)}>
+                    About
+                </div>
+                <div className="headerNav-item" onClick={() => scrollToComponent(stackRef)}>
+                    Stack
+                </div>
             </div>
-            <InfiniteScroll
-                dataLength={state.items.length}
-                // height={1200} // Adjust this value based on your design needs
-                next={fetchMoreData}
-                hasMore={hasMore}
-                loader={<CircularProgress/>}
-                endMessage={
-                    <p style={{textAlign: "center"}}></p>
-                }
-            >
-                {state.items.map((page, index) => page)}
-            </InfiniteScroll>
 
+            <Home />
+            <div ref={projectRef}>
+                <Portfolio />
+            </div>
+            <div ref={aboutRef}>
+                <About />
+            </div>
+            <div ref={stackRef}>
+                <Stack />
+            </div>
+            <Contact />
         </div>
     );
 }
