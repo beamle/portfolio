@@ -18,7 +18,8 @@
         height: auto;
     }
     .stack__container {
-        gap: 10px;
+        margin-top: 0 !important;
+        gap: 10px !important;
     }
     .stackItem {
         width: 25px !important;
