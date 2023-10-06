@@ -7,6 +7,8 @@ import Paper from "@mui/material/Paper";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import {Button} from "@mui/material";
+import sm from "../pics/sm.png"
+import socialMedia2 from "../pics/social-media2.png"
 
 const Portfolio = () => {
     return (
@@ -57,7 +59,7 @@ const Portfolio = () => {
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        <img src="./pics/sm.png"
+                        <img src={sm}
                              alt="Todolist"
                              className={s.image}
                              style={{width: '100%', height: 'auto', maxWidth: '100%'}}
@@ -118,7 +120,7 @@ const Portfolio = () => {
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        <img src="./pics/tl.png"
+                        <img src={socialMedia2}
                              alt="SocialMedia"
                              className={s.image}
                              style={{width: '100%', height: '100%', maxWidth: '100%'}}
