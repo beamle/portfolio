@@ -29,7 +29,8 @@ export default function ContactForm() {
             </Container>
             <Container sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
                 <Box sx={{
-                    p: 2,
+                    m: 2,
+                    p: 1,
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -38,10 +39,11 @@ export default function ContactForm() {
                     <Link to="https://t.me/seniorpomidor1" target="_blank">
                         <TelegramIcon sx={{color: 'rgb(255, 255, 182)', fontSize: '50px', m: 2}}/>
                     </Link>
-                    <Typography sx={{color: 'white', fontWeight: 900, m: 2}}>TELEGRAM</Typography>
+                    <Typography sx={{color: 'white', fontWeight: 900}}>TELEGRAM</Typography>
                 </Box>
                 <Box sx={{
-                    p: 2,
+                    m: 2,
+                    p: 1,
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -51,11 +53,12 @@ export default function ContactForm() {
                         <LinkedInIcon sx={{color: 'rgb(255, 255, 182)', fontSize: '50px', m: 2}}/>
 
                     </Link>
-                    <Typography sx={{color: 'white', fontWeight: 900, m: 2}}>LINKEDIN</Typography>
+                    <Typography sx={{color: 'white', fontWeight: 900}}>LINKEDIN</Typography>
                 </Box>
                 <Box
                     sx={{
-                        p: 2,
+                        m: 2,
+                        p: 1,
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
@@ -65,7 +68,7 @@ export default function ContactForm() {
                     onClick={handleEmailClick}
                 >
                     <EmailIcon sx={{color: "rgb(255, 255, 182)", fontSize: "50px", m: 2}}/>
-                    <Typography sx={{color: "white", fontWeight: 900, m: 2}}>EMAIL</Typography>
+                    <Typography sx={{color: "white", fontWeight: 900}}>EMAIL</Typography>
                 </Box>
             </Container>
         </div>
