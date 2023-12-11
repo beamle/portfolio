@@ -21,12 +21,19 @@ const Home = () => {
                     </div>
                     <div className={s.buttons}>
                         <a
-                            href="https://drive.google.com/file/d/1S3olNNTyod-q0171eGSon_cZchqBhtJQ/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1AgChb3HoaQkoYcaydy6lxUyDeOwL2dUo/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <button>CV download</button>
                         </a>
+                      <a
+                        href="https://docs.google.com/document/d/1vVLz9hHtqqnBqY330Q5oZ7INmEfQpENs/edit?usp=sharing&ouid=104902378168193929644&rtpof=true&sd=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button>Cover letter</button>
+                      </a>
                         <a
                             href="https://github.com/beamle"
                             target="_blank"

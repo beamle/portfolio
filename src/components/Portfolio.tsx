@@ -8,7 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import {Button} from "@mui/material";
 import sm from "../pics/sm.png"
-import socialMedia2 from "../pics/social-media2.png"
+import flashcards from "../pics/flashcards.png"
 
 const Portfolio = () => {
     return (
@@ -97,19 +97,19 @@ const Portfolio = () => {
                         color: 'white',
                         textTransform: 'uppercase',
                         fontWeight: '900'
-                    }}>SocialMedia</Typography></div>
+                    }}>Flashcards</Typography></div>
                     <Box sx={{display: 'flex', width: '100%'}}>
                         <div className={s.item__description} style={{flex: '1'}}>
-                            <Typography sx={{color: 'white'}}>Social-network developed using React-Redux, utilizing
-                                class-components and the connector approach</Typography>
+                            <Typography sx={{color: 'white'}}>Flashcards - Anki clone developed with React,
+                                Radix, RTK Query, Typescript and Storybook </Typography>
                         </div>
 
                         <div className={s.item__stack__container} style={{flex: '1', justifyContent: 'center'}}>
                             <div className={s.item__stack__item__r}>React</div>
-                            <div className={s.item__stack__item__rf}>ReduxForm</div>
+                            <div className={s.item__stack__item__rf}>RHForms</div>
                             <div className={s.item__stack__item__ts}>Typescript</div>
-                            <div className={s.item__stack__item__red}>Redux</div>
-                            <div className={s.item__stack__item__jest}>Jest</div>
+                            <div className={s.item__stack__item__red}>RTK Query</div>
+                            <div className={s.item__stack__item__jest}>Radix</div>
                         </div>
                     </Box>
                     <Paper sx={{
@@ -120,7 +120,7 @@ const Portfolio = () => {
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        <img src={socialMedia2}
+                        <img src={flashcards}
                              alt="SocialMedia"
                              className={s.image}
                              style={{width: '100%', height: '100%', maxWidth: '100%'}}
@@ -129,14 +129,14 @@ const Portfolio = () => {
                     <div className={s.item__stack__container}
                          style={{marginTop: '15px', justifyContent: 'flex-start'}}>
                         <div className={s.item__stack__item__gh}>
-                            <Button href="https://github.com/beamle/samurai-way-main" target="_blank" sx={{borderRadius: 5, p: 1, color: '#424242', backgroundColor: '#e7e7e7', '&:hover': {
+                            <Button href="https://github.com/beamle/FlashCards" target="_blank" sx={{borderRadius: 5, p: 1, color: '#424242', backgroundColor: '#e7e7e7', '&:hover': {
                                     color: '#e7e7e7', backgroundColor: '#424242'},}}>
                                 <GitHubIcon/>
                                 GitHub
                             </Button>
                         </div>
                         <div className={s.item__stack__item__ghp}>
-                            <Button disabled={true} href="" target="_blank" sx={{borderRadius: 5, p: 1, color: '#424242', backgroundColor: '#e7e7e7', '&:hover': {
+                            <Button href="https://flash-cards-peach.vercel.app/" target="_blank" sx={{borderRadius: 5, p: 1, color: '#424242', backgroundColor: '#e7e7e7', '&:hover': {
                                     color: '#e7e7e7', backgroundColor: '#424242'},}}>
                                 <LanguageIcon/>
                                 Deploy
