@@ -22,7 +22,7 @@ const Item = styled(Paper)(({theme}) => ({
 
 export default function SquareCorners() {
     return (
-        <div className={s.stack}>
+        <section className={s.stack}>
             <Container>
                 <h1>Stack</h1>
             </Container>
@@ -40,7 +40,7 @@ export default function SquareCorners() {
                     <Item className={s.stackItem}><img src="./pics/formik.png" alt="formik Logo" width="100%" height="100%" /></Item>
                 </Stack>
             </Container>
-        </div>
+        </section>
     );
 }
 

@@ -23,7 +23,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className={s.contact}>
+        <section className={s.contact}>
             <Container>
             {/*    <h1> Contactus  &#127797;</h1>*/}
             </Container>
@@ -71,6 +71,6 @@ export default function ContactForm() {
                     <Typography sx={{color: "white", fontWeight: 900}}>EMAIL</Typography>
                 </Box>
             </Container>
-        </div>
+        </section>
     );
 }

@@ -3,7 +3,7 @@ import s from './Home.module.css';
 
 const Home = () => {
     return (
-        <div className={s.home}>
+        <section className={s.home}>
             <div className={s.homeContainer}>
                 <div className={s.content}>
                     <div className={s.bigName}>
@@ -44,7 +44,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
