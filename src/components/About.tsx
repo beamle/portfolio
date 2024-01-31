@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 const About = () => {
     return (
-        <div className={s.about}>
+        <section className={s.about}>
             <Container>
                 <h1> About </h1>
             </Container>
@@ -31,7 +31,7 @@ const About = () => {
                     </Box>
                 </Container>
             </div>
-        </div>
+        </section>
     );
 };
 
